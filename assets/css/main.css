@@ -1755,19 +1755,28 @@ input, select, textarea {
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
+			width: 100px;
+			height: 100px;
+			background: rgb(153, 153, 153);
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 100px;
+				height: 100px;
 			}
 
 		.image.fit {
 			display: block;
 			width: 100%;
+		}
+
+		.underline::after {
+			display: block;
+			width: 100%;
+			content: ""; /* Creates the underline */
+			bottom: -5px; /* Adjust this to control the space between the underline and the image */
+			height: 1px; /* Adjust the thickness of the underline */
+			background-color: rgb(182, 182, 182); /* Set the color of the underline */
 		}
 
 		.image.featured {
@@ -2260,6 +2269,18 @@ input, select, textarea {
 			}
 
 			#main > section.four {
+				background-color: #e8edec;
+			}
+
+			#main > section.five {
+				background-color: #f5fafa;
+			}
+
+			#main > section.six {
+				background-color: #ecf1f1;
+			}
+
+			#main > section.seven {
 				background-color: #e8edec;
 			}
 
